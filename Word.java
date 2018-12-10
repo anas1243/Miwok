@@ -11,6 +11,7 @@ public class Word {
         this.mDefaultTranslation = mDefaultTranslation;
         this.mSoundSource = mSoundSource;
     }
+
     public Word(String mDefaultTranslation, String mMiwokTranslation, int mImageSource, int mSoundSource) {
         this.mMiwokTranslation = mMiwokTranslation;
         this.mDefaultTranslation = mDefaultTranslation;

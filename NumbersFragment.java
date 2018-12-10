@@ -5,7 +5,6 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.NavUtils;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -13,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -46,16 +44,15 @@ public class NumbersFragment extends Fragment {
         }
     };
 
+    public NumbersFragment() {
+        // Required empty public constructor
+    }
+
     @Override
     public void onStop() {
         super.onStop();
         releaseMediaPlayer();
     }
-
-    public NumbersFragment() {
-        // Required empty public constructor
-    }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

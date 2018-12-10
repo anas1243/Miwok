@@ -15,8 +15,6 @@ package com.example.android.miwok;
  * limitations under the License.
  */
 
-import android.content.res.Resources;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -34,11 +32,11 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         if (position == 0) {
             return new NumbersFragment();
-        } else if (position == 1){
+        } else if (position == 1) {
             return new FamilyMembersFragment();
         } else if (position == 2) {
             return new ColorsFragment();
-        } else  {
+        } else {
             return new PhrasesFragment();
         }
     }
@@ -52,7 +50,7 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
             return App.getContext().getString(R.string.category_numbers);
-        } else if (position == 1){
+        } else if (position == 1) {
             return App.getContext().getString(R.string.category_family);
         } else if (position == 2) {
             return App.getContext().getString(R.string.category_colors);
